@@ -386,6 +386,29 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  height: 100%;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 4vw;
+}
+nav ul li a:link, nav ul li a:visited {
+  font-family: "Roboto Slab", serif;
+  color: #1e482a;
+  transition: 0.25s;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  color: #fb906a;
+}
+
 /* =============
     Header
 ============= */
