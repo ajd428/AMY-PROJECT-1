@@ -1,3 +1,18 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    justify-content: center;
+    display: block;
+    border-radius: 6px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 60px;
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
+    &:hover, &:active{
+        color: #5bad60;
+        background-color: rgb(48, 87, 48);
+    }
+}
+
