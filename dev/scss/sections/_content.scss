@@ -4,12 +4,12 @@
     grid-template-areas: ". content .";
     padding: 64px 0;
 
-    @include md{
+    @include sm{
         padding: 100px 0;
         grid-template-columns: auto 80% auto;
     }
 
-    @include lg{
+    @include md{
         padding: 128px 0;
         grid-template-columns: auto 80% auto;
     }
