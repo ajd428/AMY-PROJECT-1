@@ -125,27 +125,40 @@ function logoAni(){
 }   
 
 function heroAni(){
-    let tl = gsap.timeline({delay:1});
+    let tl = gsap.timeline();
     let mm = gsap.matchMedia();
 
     mm.add("(max-width:767px)", () =>{
-    tl.to("#hero-content", {duration:1, scale:0.5, ease:"bounce.out"})
-    .to("#hero-content", {duration:1, scale:1.5, ease:"bounce.out"})
+    tl.to("#hero-content", {duration:1, scale:0.5, ease:"bounce.out"}, "<")
+    .to("#hero-content", {duration:1, scale:1.5, ease:"bounce.out"}, "<")
     });
 
     mm.add("(min-width:768px)", () => {
-    tl.to("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05, scale:1.5})
+    tl.to("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05, scale:1.5}, "<")
     });
+
+    return tl;
 }
 
+function regAni(){
+    let tl = gsap.timeline();
+
+    mainTl.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25}, "<")
+    .from("#content", {duration:2.25, scale:0.5, rotation:360}, "<");
+
+    return tl;
+}
 
 mainTl.add(logoAni())
 .add(heroAni())
+.add(regAni())
 ;
 
-mainTl.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25}, "<")
-.from("#content", {duration:2.25, scale:1.5, rotation:180}, "<")
+//WEEK 4 ERROR:
+//mainTl.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25}, "<")
+//.from("#content", {duration:2.25, scale:1.5, rotation:180}, "<")
 
+/////////////////
 
 //gsap.from("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05, scale:1.5});
 //gsap.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25});
