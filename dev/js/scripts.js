@@ -1,12 +1,12 @@
 import {gsap} from "gsap"
 
-gsap.from("#logo", {duration:2.25, y:"-=80", delay:0.25});
+//gsap.from("#logo", {duration:2.25, y:"-=80", delay:0.25});
 
-gsap.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25});
+//gsap.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25});
 
-gsap.from("#content", {duration:2.25, scale:1.5, rotation:180});
+//gsap.from("#content", {duration:2.25, scale:1.5, rotation:180});
 
-gsap.from("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05, scale:1.5});
+//gsap.from("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05, scale:1.5});
 
 
 
@@ -63,6 +63,11 @@ gsap.from("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05
 
 //let mainTl = gsap.timeline();
 
+//mainTl.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25}, "<")
+//.from("#content", {duration:2.25, scale:1.5, rotation:180}, "<")
+//.from("#logo", {duration:2.25, y:"-=80", delay:0.25}, "<")
+//;
+
 //let mainTl = gsap.timeline({delay:1 paused:true});
 //let mainTl = gsap.timeline({delay:1 resume:true});
 
@@ -100,24 +105,49 @@ gsap.from("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05
 
 //Media Media
 
-//function logoAni(){
-    //let tl = gsap.timeline({delay:1});
-    //let mm = gsap.matchMedia();
+let mainTl = gsap.timeline();
 
-    //mm.add("(max-width:767px)", () =>{
-    //tl.to("#logo", {duration:0.5, scale:0.5, ease:"bounce.out"})
-    //.to("#logo", {duration:0.5, rotation:180})
-    //});
+function logoAni(){
+    let tl = gsap.timeline({delay:1});
+    let mm = gsap.matchMedia();
 
-     //mm.add("(min-width:768px)", () =>{
-    //tl.to("#logo", {duration:0.5, scale:1.5, ease:"bounce.out"})
-    //.to("#logo", {duration:0.5, rotation:360, backgroundColor:"peach"})
-    //});
+    mm.add("(max-width:767px)", () =>{
+    tl.to("#logo", {duration:1.25, rotation:360})
+    });
 
-    //return tl;
-//}
+    mm.add("(min-width:768px)", () =>{
+        tl.to("#logo", {duration:1.25, scale:0.5, ease:"bounce.out"}, "<")
+        tl.to("#logo", {duration:1.25, scale:1, ease:"bounce.out"})
+       });
 
 
-//mainTl.add(logoAni())
-//.add(otherfunction()) OR .add(otherfunction(), "<")
-//;
+    return tl;
+}   
+
+function heroAni(){
+    let tl = gsap.timeline({delay:1});
+    let mm = gsap.matchMedia();
+
+    mm.add("(max-width:767px)", () =>{
+    tl.to("#hero-content", {duration:1, scale:0.5, ease:"bounce.out"})
+    .to("#hero-content", {duration:1, scale:1.5, ease:"bounce.out"})
+    });
+
+    mm.add("(min-width:768px)", () => {
+    tl.to("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05, scale:1.5})
+    });
+}
+
+
+mainTl.add(logoAni())
+.add(heroAni())
+;
+
+mainTl.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25}, "<")
+.from("#content", {duration:2.25, scale:1.5, rotation:180}, "<")
+
+
+//gsap.from("#hero-content", {duration:0.75, yoyo:true, repeat:2, repeatDelay:0.05, scale:1.5});
+//gsap.from("nav li", {duration:1.75, x:"+=450", stagger: 0.25, delay:0.25});
+
+//OR .add(otherfunction(), "<")
