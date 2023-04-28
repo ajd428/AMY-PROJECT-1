@@ -39,21 +39,21 @@
     },
     "\/deploy\/img\/challenge1.gif" : {
       "ft" : 4194304,
-      "iS" : 65343,
+      "iS" : 135303,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/challenge1.gif",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
     "\/deploy\/img\/challenge2.gif" : {
       "ft" : 4194304,
-      "iS" : 216814,
+      "iS" : 360178,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/challenge2.gif",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
@@ -63,7 +63,7 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/challenge3.gif",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
@@ -155,25 +155,25 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
     },
     "\/dev\/instructions.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/instructions.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/instructions.html",
+      "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/dev\/js\/scripts-min.js",
-      "oF" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 2,
       "sC" : 3,
       "tS" : 0
     },
@@ -351,8 +351,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/scss\/styles.css",
-      "oF" : 0,
+      "oAP" : "\/deploy\/css\/styles.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -409,10 +409,11 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "AMY-PROJECT-1",
+    "displayValue" : "Motion-S23-PM",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
-    "iconImageWasSetByUser" : 0
+    "iconImageWasSetByUser" : 0,
+    "lastBuiltDate" : 704325901.50510299
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -1025,7 +1026,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
