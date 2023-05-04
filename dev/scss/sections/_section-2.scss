@@ -1,7 +1,7 @@
 #section-2{
-    background-color: var(--charcoal);
+    background-color: var(--bluegray);
     height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     background-image: url("../img/hero.jpg");
@@ -10,7 +10,23 @@
     #box{
         height: 100px;
         width: 100px;
-        background-color: var(--red);
+        background-color: var(--bluegray);
         border: 3px solid var(--white);
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2{
+        font-size: 2em;
+		display: grid;
+        color: var(--white);
+		justify-content: right;
+        align-items: right;
+		text-align: right;
+        margin-bottom: 0;
     }
 }

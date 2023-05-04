@@ -14,9 +14,9 @@ html {
   --white: #fff;
   --black: #000;
   --charcoal: #383838;
-  --aqua: #2ee6ef;
-  --yellow: #efe22e;
-  --red: #ef4b2e;
+  --bluegray: #66a6aa;
+  --darkgreen: #224b22;
+  --pink: #e79789;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -335,7 +335,7 @@ template {
     Typography
 ============= */
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Arsenal", sans-serif;
 }
 
 /* =============
@@ -369,17 +369,36 @@ textarea {
     Footer
 ============= */
 #section-1 {
-  background-color: var(--aqua);
+  background-color: var(--pink);
   height: 100vh;
-  display: flex;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#section-1 h1 {
+  font-size: 3em;
+  margin: 0 auto;
+  color: var(--white);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+#section-1 h2 {
+  font-size: 2em;
+  display: grid;
+  margin: 0 auto;
+  color: var(--charcoal);
+  padding-top: 0;
+  margin-top: 0;
   justify-content: center;
   align-items: center;
 }
 
 #section-2 {
-  background-color: var(--charcoal);
+  background-color: var(--bluegray);
   height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-image: url("../img/hero.jpg");
@@ -388,14 +407,51 @@ textarea {
 #section-2 #box {
   height: 100px;
   width: 100px;
-  background-color: var(--red);
+  background-color: var(--bluegray);
   border: 3px solid var(--white);
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+#section-2 h2 {
+  font-size: 2em;
+  display: grid;
+  color: var(--white);
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+  margin-bottom: 0;
 }
 
 #section-3 {
-  background-color: var(--yellow);
+  background-color: var(--darkgreen);
   height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+}
+#section-3 h1 {
+  font-size: 3em;
+  margin: 0 auto;
+  color: var(--white);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+#section-3 h2 {
+  font-size: 1.5em;
+  display: grid;
+  margin: 0 auto;
+  color: var(--pink);
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 80px;
+  margin-right: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

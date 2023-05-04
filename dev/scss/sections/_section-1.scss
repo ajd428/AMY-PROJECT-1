@@ -1,7 +1,28 @@
 #section-1{
-    background-color: var(--aqua);
+    background-color: var(--pink);
     height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+
+    h1{
+        font-size: 3em;
+        margin: 0 auto;
+        color: var(--white);
+        padding-bottom: 0;
+        margin-bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 2em;
+        display: grid;
+        margin: 0 auto;
+        color: var(--charcoal);
+        padding-top: 0;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
 }
