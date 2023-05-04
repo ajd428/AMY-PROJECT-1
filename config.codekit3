@@ -417,7 +417,7 @@
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
     "displayValue" : "AMY-PROJECT-1",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0
   },
