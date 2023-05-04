@@ -57,6 +57,14 @@ h1 {
   color: var(--white);
 }
 
+/*h2 {
+  font-size: 1.5em;
+  margin: 0.67em 0;
+  color: var(--charcoal);
+  text-align: right;
+  padding-top: 10;
+}
+
 /* Grouping content
    ========================================================================== */
 /**
