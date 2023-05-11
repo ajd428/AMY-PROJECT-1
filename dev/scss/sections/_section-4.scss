@@ -1,0 +1,17 @@
+#section-4{
+    background-color: var(--bluegray);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    #box2{
+        height: 100px;
+        width: 100px;
+        background-color: var(--pink);
+        border: 3px solid var(--white);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}

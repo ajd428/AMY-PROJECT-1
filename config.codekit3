@@ -98,6 +98,14 @@
       "oAP" : "\/dev\/content\/section-3.html",
       "oF" : 0
     },
+    "\/dev\/content\/section-4.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/section-4.html",
+      "oF" : 1
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -340,6 +348,21 @@
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_section-3.css",
       "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_section-4.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_section-4.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
