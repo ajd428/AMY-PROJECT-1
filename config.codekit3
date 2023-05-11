@@ -42,6 +42,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 8738,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,

@@ -430,15 +430,17 @@ textarea {
   background-color: var(--darkgreen);
   height: 100vh;
   display: grid;
+  grid-template-columns: 3;
   justify-content: center;
   align-items: center;
 }
 #section-3 h1 {
   font-size: 3em;
+  display: grid;
   margin: 0 auto;
   color: var(--white);
-  padding-bottom: 0;
-  margin-bottom: 0;
+  padding-bottom: 40;
+  margin-bottom: 40;
   justify-content: center;
   align-items: center;
 }
@@ -448,6 +450,8 @@ textarea {
   margin: 0 auto;
   color: var(--pink);
   padding-top: 0;
+  padding-bottom: 100;
+  margin-bottom: 100;
   margin-top: 0;
   margin-left: 80px;
   margin-right: 80px;
