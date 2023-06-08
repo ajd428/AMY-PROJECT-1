@@ -56,11 +56,11 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/logo-reveal(1).svg" : {
+    "\/design\/foundlogo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/logo-reveal(1).svg",
+      "oAP" : "\/design\/foundlogo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -300,6 +300,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/gsap-bonus.tgz" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gsap-bonus.tgz",
+      "oF" : 0
     },
     "\/node_modules" : {
       "ft" : 65536,
