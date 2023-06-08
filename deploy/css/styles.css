@@ -405,4 +405,11 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #01239e;
+}
+#content > div svg {
+  width: 50%;
+}
+#content > div #green-m, #content > div #green-type {
+  visibility: hidden;
 }
