@@ -405,4 +405,11 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #F0F0F0;
+}
+#content > div svg {
+  width: 50%;
+}
+#content > div #leaf-sprout, #content > div #flower-sprout, #content > div #vase, #content > div #plant, #content > div #title {
+  visibility: hidden;
 }
