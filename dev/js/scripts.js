@@ -13,7 +13,7 @@ const mainTL = gsap.timeline();
 mainTL.fromTo("#whitem-1", {drawSVG:"0%"}, {duration:2, drawSVG:"100%", stroke:"#fff"})
 .fromTo("#whitem-2",{drawSVG:"0%"}, {duration:1.5, delay:.6, drawSVG:"100%", stroke:"#fff"},"<")
 
-.to("#greenm-1", {duration:2, delay:.2, drawSVG:"100%", stroke:"#83B9A5"},"<")
+.from("#greenm-1", {duration:2, drawSVG:"0%", stroke:"#83B9A5"},"+=0.2")
 .to("#greenm-2", {duration:1.5, delay:.6, drawSVG:"100%", stroke:"#83B9A5"},"<")
 
 .to("#d-1-green", {duration: .05, delay:.4, autoAlpha:1, fill:"#83B9A5"})
